@@ -1,0 +1,65 @@
+
+
+/* Form styling */
+.ml-form-horizontalRow {
+  width: 100%;
+  display: flex; /* Ensure horizontal alignment of input and button */
+  flex-direction: row;
+  background-color: #ccc;
+  gap: 1rem;
+}
+
+.ml-input-horizontal {
+      width: 100%;
+      max-width: 70%;
+}
+
+.ml-field-email input {
+  width: 100%;
+  border: 1px solid #ccc; /* Default border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 20px 5px; /* Adjust padding as needed */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+.ml-button-horizontal {
+      min-width: 30%;
+}
+
+.ml-button-horizontal{
+  color: #fff; /* Button text color */
+ 
+}
+
+.ml-button-horizontal button {
+  background-color: #007bff; /* Button background color */
+  border: none;
+   border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  width: 100%;
+  padding: 20px 10px; /* Adjust padding as needed */
+}
+
+/* Responsive layout */
+@media only screen and (max-width: 767px) {
+  .ml-form-horizontalRow  {
+    flex-direction: column; /* Change to vertical layout on small screens */
+     gap: .5rem;  
+}
+
+  .ml-button-horizontal,
+  .ml-input-horizontal {
+    max-width: 100%; /* Ensure elements don't exceed container width */
+    margin-right: 0; /* Remove margin on small screens */
+  }
+
+ 
+ 
+}
+
+/* Focus styles */
+.ml-field-email input:focus {
+  outline: none; /* Remove default outline */
+  border-color: #28a745; /* Green border color on focus */
+}
