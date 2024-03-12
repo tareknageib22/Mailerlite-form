@@ -19,7 +19,7 @@
   border: 1px solid #ccc; /* Default border color */
   border-radius: 5px; /* Rounded corners */
   padding: 20px 5px; /* Adjust padding as needed */
-  transition: border-color 0.3s; /* Smooth transition for border color */
+  transition: border-color 0.25s; /* Smooth transition for border color */
 }
 
 .ml-button-horizontal {
